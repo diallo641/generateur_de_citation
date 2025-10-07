@@ -38,6 +38,15 @@ let motivation={"Mark Twain":"🌟 Ils ne savaient pas que c’était impossible
                  "Coluche":"⚡ La vie mettra des pierres sur ta route. À toi de décider d’en faire des murs ou des ponts."
     
 }
+//2-Fonction pour selectionner une citation
+function citationaleatoire(tab) {
+    let taille=Object.keys(tab).length;
+    let keys = Object.keys(tab);
+    let index = (Math.floor(Math.random() * taille)); 
+    let cle = keys[index];
+    let valeur = tab[cle];
+    return { cle: cle, valeur: valeur };  
+}
 mot.addEventListener("focus", function(){
     mot.style.background = "linear-gradient(90deg, #0d6efd, #ffffff)"  
 })
