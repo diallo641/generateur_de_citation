@@ -26,6 +26,18 @@ let tristesse={ "Marcel Achard":"💔 « Il est triste de ne pas s’aimer quand
                  "Honoré de Balzac":"🖤 Les chagrins d’amour sont les frais d’apprentissage de la passion."
 
 }
+let motivation={"Mark Twain":"🌟 Ils ne savaient pas que c’était impossible, alors ils l’ont fait.",
+                "Winston Churchill":"🚀 Le succès, c’est d’aller d’échec en échec sans perdre son enthousiasme.",
+                 "Sénèque":"🔥 Ce n’est pas parce que les choses sont difficiles que nous n’osons pas, c’est parce que nous n’osons pas qu’elles sont difficiles",
+                 "Martin Luther King Jr":"💭 Crois en tes rêves et ils se réaliseront peut-être ; crois en toi et ils se réaliseront sûrement",
+                 "Arthur Ashe":"🌈 Commence là où tu es, utilise ce que tu as, fais ce que tu peux.",
+                 "Confucius":"💪 La plus grande gloire n’est pas de ne jamais tomber, mais de se relever à chaque chute.",
+                 "Antoine de Saint-Exupéry":"🕊️ Fais de ta vie un rêve, et d’un rêve, une réalité.",
+                 "Vidal Sassoon":"⏳ Le seul endroit où le succès vient avant le travail, c’est dans le dictionnaire.",
+                 "Eleanor Roosevelt":"🌻 L’avenir appartient à ceux qui croient à la beauté de leurs rêves.",
+                 "Coluche":"⚡ La vie mettra des pierres sur ta route. À toi de décider d’en faire des murs ou des ponts."
+    
+}
 mot.addEventListener("focus", function(){
     mot.style.background = "linear-gradient(90deg, #0d6efd, #ffffff)"  
 })
