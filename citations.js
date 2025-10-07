@@ -1,6 +1,7 @@
 let mot=document.getElementById("mot");
 let citation=document.getElementById("citation");
 let auteur=document.getElementById("auteur");
+let genererunecitation=document.getElementById("genererunecitation");
 //fonction pour choisir une citation d'une maniere aleatoire
 //1-Declare un eliste d'objet sous form ede dictionnaiare selon les themes
 let amour={ "Antoine de Saint-Exupéry": "💌 Aimer, ce n’est pas se regarder l’un l’autre, c’est regarder ensemble dans la même direction.", 
@@ -47,6 +48,35 @@ function citationaleatoire(tab) {
     let valeur = tab[cle];
     return { cle: cle, valeur: valeur };  
 }
+//Gerer l'evenment sur le boutton
+genererunecitation.addEventListener("click", function(){
+    let theme=document.getElementById("mot").value.trim();
+    if(theme==''){
+        citation.textContent="vous deveez ecrire quelque chose pour avoir une citation"
+        citation.style.color='red';
+        auteur.textContent="";
+    }
+    else if(theme==="Amour"){
+        let resultat=citationaleatoire(amour)
+        citation.textContent="citation generer est: "+resultat.valeur;
+        auteur.innerHTML = 'Auteur: <i class="text-muted">' + resultat.cle + '</i>';
+        document.getElementById("mot").value="";
+
+    }
+     else if(theme==="Tristesse"){
+        let resultat=citationaleatoire(tristesse)
+        citation.textContent="citation generer est: "+resultat.valeur;
+        auteur.innerHTML = 'Auteur: <i class="text-muted">' + resultat.cle + '</i>';
+        document.getElementById("mot").value="";
+
+    }
+     else if(theme==="Motivation"){
+        let resultat=citationaleatoire(motivation)
+        citation.textContent="citation generer est: "+resultat.valeur;
+        auteur.innerHTML = 'Auteur: <i class="text-muted">' + resultat.cle + '</i>';
+        document.getElementById("mot").value="";
+    }
+})
 mot.addEventListener("focus", function(){
     mot.style.background = "linear-gradient(90deg, #0d6efd, #ffffff)"  
 })
