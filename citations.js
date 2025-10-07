@@ -14,6 +14,18 @@ let amour={ "Antoine de Saint-Exupéry": "💌 Aimer, ce n’est pas se regarder
     "Anonyme":"💖 Le vrai amour, c’est d’aimer sans raison.",
     "Anonyme1":"🌙 Aimer quelqu’un, c’est lui donner la possibilité de te détruire, mais lui faire confiance pour ne pas le faire."
      }
+let tristesse={ "Marcel Achard":"💔 « Il est triste de ne pas s’aimer quand on s’aime encore.",
+                "Victor Hugo":"🌧️ Le souvenir, c’est la présence invisible.",
+                 "William Shakespeare":"🍂 Le plus douloureux des sentiments, c’est de se sentir oublié par quelqu’un qu’on ne peut pas oublier",
+                 "Arthur Wing Pinero":"🌙 Ceux qui aiment profondément ne vieillissent jamais ; ils peuvent mourir de vieillesse, mais ils meurent jeunes.",
+                 "François de La Rochefoucauld":"😔 L’absence diminue les petits amours et augmente les grands, comme le vent éteint les bougies et attise le feu",
+                 "Jean-Paul Sartre":"😔 « Il n’y a pas d’amour qui résiste à l’absence, sauf celui qui n’a jamais eu d’avenir.",
+                 "Pierre Reverdy" :"🥀  On ne meurt pas d’amour, mais on meurt souvent de ses suites.",
+                 "Jean Cocteau":"💫 Le cœur se brise quand on le retient trop longtemps de pleurer.",
+                 "George Sand":"🕊️ L’amour est une torture réciproque.",
+                 "Honoré de Balzac":"🖤 Les chagrins d’amour sont les frais d’apprentissage de la passion."
+
+}
 mot.addEventListener("focus", function(){
     mot.style.background = "linear-gradient(90deg, #0d6efd, #ffffff)"  
 })
