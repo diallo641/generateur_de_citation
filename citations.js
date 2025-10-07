@@ -3,6 +3,7 @@ let citation=document.getElementById("citation");
 let auteur=document.getElementById("auteur");
 let genererunecitation=document.getElementById("genererunecitation");
 let deuxieme_colonne=document.getElementById("deuxieme_colonne");
+let deuxieme_colonne_premiere_paragraphe=document.getElementById("deuxieme_colonne_premiere_paragraphe");
 //fonction pour choisir une citation d'une maniere aleatoire
 //1-Declare un eliste d'objet sous form ede dictionnaiare selon les themes
 let amour={ "Antoine de Saint-Exupéry": "💌 Aimer, ce n’est pas se regarder l’un l’autre, c’est regarder ensemble dans la même direction.", 
@@ -53,11 +54,12 @@ function citationaleatoire(tab) {
 genererunecitation.addEventListener("click", function(){
     let theme=document.getElementById("mot").value.trim();
     if(theme==''){
-        citation.textContent="vous deveez ecrire quelque chose pour avoir une citation"
+        citation.textContent="vous devez choisir quelque chose pour avoir une citation"
         auteur.textContent="";
         premiere_colonne.style.backgroundColor="lightblue";
         deuxieme_colonne.style.backgroundColor="lightcyan";
         troisieme_colonne.style.backgroundColor="lightblue";
+        deuxieme_colonne_premiere_paragraphe.style.backgroundColor="#8ea838ff"; 
         document.getElementById("mot").value="";
     }
     else if(theme==="Amour"){
@@ -67,6 +69,7 @@ genererunecitation.addEventListener("click", function(){
         premiere_colonne.style.backgroundColor="#72434B";
         deuxieme_colonne.style.backgroundColor="#DB3A34";
         troisieme_colonne.style.backgroundColor="#ED8146";
+        deuxieme_colonne_premiere_paragraphe.style.backgroundColor="#bde0fe";
         document.getElementById("mot").value="";
 
     }
@@ -77,6 +80,7 @@ genererunecitation.addEventListener("click", function(){
         premiere_colonne.style.backgroundColor="#177E89";
         deuxieme_colonne.style.backgroundColor="#084C61";
         troisieme_colonne.style.backgroundColor="#FFC857";
+        deuxieme_colonne_premiere_paragraphe.style.backgroundColor="#a2d2ff";
         document.getElementById("mot").value="";
 
     }
@@ -87,6 +91,7 @@ genererunecitation.addEventListener("click", function(){
         premiere_colonne.style.backgroundColor="#F6CFF3";
         deuxieme_colonne.style.backgroundColor="#F5BFB1";
         troisieme_colonne.style.backgroundColor="#ECB784";
+        deuxieme_colonne_premiere_paragraphe.style.backgroundColor="#669bbc";
         document.getElementById("mot").value="";
     }
     
