@@ -2,6 +2,7 @@ let mot=document.getElementById("mot");
 let citation=document.getElementById("citation");
 let auteur=document.getElementById("auteur");
 let genererunecitation=document.getElementById("genererunecitation");
+let deuxieme_colonne=document.getElementById("deuxieme_colonne");
 //fonction pour choisir une citation d'une maniere aleatoire
 //1-Declare un eliste d'objet sous form ede dictionnaiare selon les themes
 let amour={ "Antoine de Saint-Exupéry": "💌 Aimer, ce n’est pas se regarder l’un l’autre, c’est regarder ensemble dans la même direction.", 
@@ -53,29 +54,42 @@ genererunecitation.addEventListener("click", function(){
     let theme=document.getElementById("mot").value.trim();
     if(theme==''){
         citation.textContent="vous deveez ecrire quelque chose pour avoir une citation"
-        citation.style.color='red';
         auteur.textContent="";
+        premiere_colonne.style.backgroundColor="lightblue";
+        deuxieme_colonne.style.backgroundColor="lightcyan";
+        troisieme_colonne.style.backgroundColor="lightblue";
+        document.getElementById("mot").value="";
     }
     else if(theme==="Amour"){
         let resultat=citationaleatoire(amour)
-        citation.textContent="citation generer est: "+resultat.valeur;
+        citation.textContent=resultat.valeur;
         auteur.innerHTML = 'Auteur: <i class="text-muted">' + resultat.cle + '</i>';
+        premiere_colonne.style.backgroundColor="#72434B";
+        deuxieme_colonne.style.backgroundColor="#DB3A34";
+        troisieme_colonne.style.backgroundColor="#ED8146";
         document.getElementById("mot").value="";
 
     }
      else if(theme==="Tristesse"){
         let resultat=citationaleatoire(tristesse)
-        citation.textContent="citation generer est: "+resultat.valeur;
+        citation.textContent=resultat.valeur;
         auteur.innerHTML = 'Auteur: <i class="text-muted">' + resultat.cle + '</i>';
+        premiere_colonne.style.backgroundColor="#177E89";
+        deuxieme_colonne.style.backgroundColor="#084C61";
+        troisieme_colonne.style.backgroundColor="#FFC857";
         document.getElementById("mot").value="";
 
     }
      else if(theme==="Motivation"){
         let resultat=citationaleatoire(motivation)
-        citation.textContent="citation generer est: "+resultat.valeur;
+        citation.textContent=resultat.valeur;
         auteur.innerHTML = 'Auteur: <i class="text-muted">' + resultat.cle + '</i>';
+        premiere_colonne.style.backgroundColor="#F6CFF3";
+        deuxieme_colonne.style.backgroundColor="#F5BFB1";
+        troisieme_colonne.style.backgroundColor="#ECB784";
         document.getElementById("mot").value="";
     }
+    
 })
 mot.addEventListener("focus", function(){
     mot.style.background = "linear-gradient(90deg, #0d6efd, #ffffff)"  
